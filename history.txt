@@ -1,0 +1,206 @@
+    1  cd day2_github/
+    2  ls
+    3  cd ..
+    4  ls
+    5  cd day2_github/
+    6  ls
+    7  unzip sample\ files.zip 
+    8  git init
+    9  git status
+   10  git add -A
+   11  git status
+   12  clear
+   13  git commit "initial commit"
+   14  git ci -m "initial commit"
+   15  git push origin master
+   16  git remote add origin git@github.com:Neous1/careerdevs_hmwk_day2.git
+   17  git push -u origin master
+   18  git hist
+   19  touch file1.txt
+   20  c9 file1.txt 
+   21  git status
+   22  git add .
+   23  git commit -m "Create a new file and add at least 3 line ot it"
+   24  git hist
+   25  mkdir newDir
+   26  cd newDir/
+   27  touch file2.txt
+   28  c9 file2.txt 
+   29  cd ..
+   30  ls 
+   31  cd round1b/
+   32  ls
+   33  cd stable/
+   34  ls
+   35  c9 ouputS.txt 
+   36  git status
+   37  git add *
+   38  git ci -m "Create a second file inside of a new directory and modify any existing file”
+   39  git status
+   40  git status
+   41  git add *
+   42  git status
+   43  cd ..
+   44  git add .
+   45  git status
+   46  cd .
+   47  git add .
+   48  git status
+   49  cd ..
+   50  git add .
+   51  git status
+   52  git ci -m "Create a second file inside of a new directory and modify any existing file”
+   53  git ci -m "create a second file inside of a new directory and modify and y existing file"
+   54  mkdir newdir2
+   55  cd newdir2/
+   56  touch file0.txt
+   57  ls
+   58  rm newdir2/file0.txt
+   59  cd ..
+   60  rm newdir2/file0.txt 
+   61  cd newdir2/
+   62  ls
+   63  cd ..
+   64  rm file1.txt 
+   65  ls
+   66  git status
+   67  git ci -m "delete any file"
+   68  git hist
+   69  git add *
+   70  git status
+   71  git push origin master
+   72  git status
+   73  git add *
+   74  git status
+   75  git add .
+   76  git status
+   77  git ci -m "Delete any file"
+   78  git status
+   79  git checkout -b branch1
+   80  touch branch1file.txt
+   81  c9 branch1file.txt 
+   82  git status
+   83  git add .
+   84  git status
+   85  git ci -m "Create a new branch and create anenw file with 3 lines in this branch"
+   86  git status
+   87  git checkout master 
+   88  git merge branch1 
+   89  git hist
+   90  ls
+   91  cd newdir2/
+   92  ls
+   93  cd ..
+   94  ls
+   95  cd newDir/
+   96  ls
+   97  c9 file2.txt 
+   98  cd
+   99  c9 .gitconfig
+  100  cd workspace
+  101  git st
+  102  cd day2_github/
+  103  git st
+  104  git add .
+  105  git st
+  106  git ci -m "Merge this branch to the Master branch. Make another edit to a file"
+  107  git hist
+  108  git checkout -b branch2
+  109  git st
+  110  git ci -m "create new branch"
+  111  git hist
+  112  git status
+  113  ls
+  114  cd round1b/
+  115  ls
+  116  cd steed/
+  117  ls
+  118  c9 outputL.txt 
+  119  cd ..
+  120  rm steed/outputL.txt
+  121  git st
+  122  git ci -m "Create a new branch, delete a file"
+  123  git add .
+  124  git st
+  125  git ci -m "Create a new branch, delete a file"
+  126  git co -b branch3
+  127  cd ..
+  128  git hist --all
+  129  clear
+  130  git hist
+  131  git hist --all
+  132  git co branch2
+  133  git co master 
+  134  ls 
+  135  cd round1b/steed/
+  136  ls
+  137  git co branch2
+  138  ls
+  139  git co outputL.txt
+  140  git co branch3
+  141  ls
+  142  git branch
+  143  git type 9f33e8d
+  144  git dump 9f33e8d
+  145  cd ...
+  146  cd ..
+  147  ls -C .git
+  148  ls -C .git/objects/
+  149  ls -C .git/objects/02
+  150  ls -C .git/objects/09
+  151  cat .gitconfig
+  152  c9 .gitconfit
+  153  ls .git/refs
+  154  ls .git/refs/heads
+  155  git/HEAD
+  156  git HEAD
+  157  ls -C .git/objects/02
+  158  clear
+  159  git hist -all
+  160  git hist --all
+  161  git dump 9f33e8d
+  162  git dump 212b580888f347fd1074d51ef2dfe9ec8a01fbb7
+  163  git push origin master
+  164  git st
+  165  vi .gitconfig
+  166  ls
+  167  mkdir gitBranching
+  168  cd g
+  169  cd gitBranching/
+  170  git init
+  171  touch indexA.html
+  172  touch todosA.js
+  173  c9 indexA.html 
+  174  git st
+  175  git add *
+  176  git ci -m "initial commit"
+  177  git remote add origin git@github.com:Neous1/gitBranching.git
+  178  git push
+  179  git status
+  180  git checkout -b v1
+  181  git st
+  182  git add -A
+  183  git commit -m "working on version1"
+  184  git push
+  185  git checkout master
+  186  git checkout v1
+  187  git add -A
+  188  git commit -m "more v1 work"
+  189  git push
+  190  git add -A
+  191  git commit -m "finishing work"
+  192  git push
+  193  git log
+  194  git checkout 901ed735cee09a7880b2f3f5878d2ff5a9d04ad2
+  195  git add -A
+  196  git commit -m "fixing v1"
+  197  git push
+  198  git checkout -b fixingV1
+  199  git status
+  200  git push 
+  201  git checkout v1
+  202  git pull
+  203  git pull origin v1
+  204  git checkout master
+  205  git merge v1
+  206  history > history.txt
